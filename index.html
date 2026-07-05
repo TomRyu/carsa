@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CaRSA · 대마규제과학협회 — 준비 중</title>
+<meta name="description" content="Cannabis Regulatory Science Association (대마규제과학협회) 공식 웹사이트를 준비하고 있습니다. Coming soon." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="CaRSA · 대마규제과학협회" />
+<meta property="og:description" content="Advancing Cannabis Research, Promoting Safety, and Providing Assurance through Scientific Evidence, Regulatory Science, and Education." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image" content="CARSA.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --green:#2e6b46;
+    --green-deep:#1e4d33;
+    --navy:#1d3a5f;
+    --navy-soft:#2b4d76;
+    --cream:#f7f5ee;
+    --cream-2:#eef0e7;
+    --ink:#2c2b26;
+    --muted:#7b786d;
+    --line:#d8d5c6;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html,body{ height:100%; }
+
+  body{
+    min-height:100%;
+    font-family:'Noto Sans KR', system-ui, sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(1200px 600px at 50% -10%, #ffffff 0%, rgba(255,255,255,0) 60%),
+      linear-gradient(165deg, var(--cream) 0%, var(--cream-2) 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:48px 24px;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .card{
+    width:100%;
+    max-width:760px;
+    text-align:center;
+    position:relative;
+  }
+
+  /* fade-in */
+  .fade{ opacity:0; transform:translateY(14px); animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards; }
+  .d1{ animation-delay:.05s } .d2{ animation-delay:.18s } .d3{ animation-delay:.31s }
+  .d4{ animation-delay:.44s } .d5{ animation-delay:.57s } .d6{ animation-delay:.70s }
+  @keyframes rise{ to{ opacity:1; transform:none } }
+  @media (prefers-reduced-motion: reduce){ .fade{ opacity:1; transform:none; animation:none } }
+
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--muted);
+    font-weight:500;
+    padding:8px 16px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:rgba(255,255,255,.5);
+    backdrop-filter:blur(4px);
+  }
+  .badge .dot{
+    width:7px; height:7px; border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 0 0 rgba(46,107,70,.5);
+    animation:pulse 2.4s infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(46,107,70,.45) }
+    70%{ box-shadow:0 0 0 9px rgba(46,107,70,0) }
+    100%{ box-shadow:0 0 0 0 rgba(46,107,70,0) }
+  }
+
+  /* logo image */
+  .logo-wrap{
+    margin-top:34px;
+  }
+  .logo{
+    display:block;
+    width:100%;
+    max-width:620px;
+    height:auto;
+    margin:0 auto;
+    /* 이미지 배경(크림)과 페이지 배경을 자연스럽게 이어붙임 */
+    mix-blend-mode:multiply;
+  }
+
+  .rule{
+    width:min(340px, 70%);
+    height:1px;
+    margin:30px auto 0;
+    background:linear-gradient(90deg, transparent, var(--line) 20%, var(--line) 80%, transparent);
+  }
+
+  .coming{
+    margin-top:34px;
+    font-size:clamp(15px, 3vw, 17px);
+    color:var(--ink);
+    font-weight:400;
+    line-height:1.7;
+  }
+  .coming strong{ font-weight:500; color:var(--green-deep); }
+  .coming .en{ color:var(--muted); font-size:.9em; letter-spacing:.04em; }
+
+  .contact{
+    margin-top:22px;
+    display:inline-flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+    justify-content:center;
+    font-size:14px;
+    color:var(--muted);
+  }
+  .contact a{
+    color:var(--navy);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    transition:border-color .2s, color .2s;
+  }
+  .contact a:hover{ color:var(--green); border-color:var(--green); }
+
+  .footer{
+    margin-top:44px;
+    font-size:12px;
+    letter-spacing:.06em;
+    color:#a6a397;
+  }
+  .footer .domain{ color:var(--navy); font-weight:500; }
+</style>
+</head>
+<body>
+  <main class="card">
+
+    <div class="fade d1">
+      <span class="badge"><span class="dot"></span>Website Coming Soon · 준비 중</span>
+    </div>
+
+    <div class="logo-wrap fade d2">
+      <img class="logo" src="CARSA.png"
+           alt="CaRSA · Cannabis Regulatory Science Association · 대마규제과학협회 — Advancing Cannabis Research, Promoting Safety, and Providing Assurance through Scientific Evidence, Regulatory Science, and Education." />
+    </div>
+
+    <div class="rule fade d4"></div>
+
+    <p class="coming fade d5">
+      <strong>공식 웹사이트를 준비하고 있습니다.</strong> 곧 새로운 모습으로 찾아뵙겠습니다.<br />
+      <span class="en">We are preparing our official website. Please check back soon.</span>
+    </p>
+
+    <div class="contact fade d5">
+      <span>문의 · Contact&nbsp; <a href="mailto:info@carsa.or.kr">info@carsa.or.kr</a></span>
+    </div>
+
+    <p class="footer fade d6">
+      <span class="domain">carsa.or.kr</span> &nbsp;·&nbsp; © <span id="year">2026</span> Cannabis Regulatory Science Association
+    </p>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
